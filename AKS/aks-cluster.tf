@@ -2,10 +2,6 @@ provider "azurerm" {
   features {}
 }
 
-  tags = {
-    environment = "dev"
-  }
-
 resource "azurerm_kubernetes_cluster" "default" {
   name                = "${resource_group}-aks"
   location            = "West US 2"
