@@ -42,13 +42,13 @@ terraform {
     }     
   }
   # Adding Backend as S3 for Remote State Storage
-  cloud {
+  /*cloud {
     organization = "upmyjob-com"
 
     workspaces {
       name = "EKS"
     }
-  } 
+  } */
 }
 
 # Terraform Provider Block
