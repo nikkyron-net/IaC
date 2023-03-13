@@ -7,5 +7,13 @@ terraform {
   }
 
   required_version = ">= 0.14"
+
+  cloud {
+    organization = "nikkyron-net"
+
+    workspaces {
+      name = "EKS"
+    }
+  } 
 }
 
