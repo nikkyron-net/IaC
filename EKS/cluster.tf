@@ -98,7 +98,7 @@ resource "aws_eks_cluster" "eks_cluster" {
   provisioner "local-exec" {
     command = "echo cluster created on `date` and cluster name: ${aws_eks_cluster.eks_cluster.name} >> cluster-creation-log.txt"
     working_dir = "local-exec-output-files/"
-    #on_failure = continue
+    on_failure = continue
   }
 }
 
