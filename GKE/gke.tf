@@ -16,6 +16,11 @@ variable "gke_num_nodes" {
 variable "zone" {
   description = "zone for the cluster"
 }
+
+variable "GOOGLE_CREDENTIALS" {
+  description = "sensitve info"
+  sensitive = true
+}
 # GKE cluster
 resource "google_container_cluster" "primary" {
   name     = "${var.project_id}-gke"
