@@ -10,9 +10,11 @@ resource "azurerm_kubernetes_cluster" "default" {
 
   default_node_pool {
     name            = "default"
-    node_count      = 2
     vm_size         = "Standard_B2s"
-    os_disk_size_gb = 30
+    os_disk_size_gb = 20
+    enable_auto_scaling = true
+    min_count = 1
+    max_count = 5
   }
 
   service_principal {
