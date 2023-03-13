@@ -9,7 +9,7 @@ terraform {
   required_version = ">= 0.14"
 
   cloud {
-    organization = "upmyjob-com"
+    organization = "nikkyron-net"
 
     workspaces {
       name = "AKS"
