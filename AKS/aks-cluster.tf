@@ -4,7 +4,7 @@ provider "azurerm" {
 
 resource "azurerm_kubernetes_cluster" "default" {
   name                = "${var.resource_group}-aks"
-  location            = "West US 2"
+  location            = "South Central US"
   resource_group_name = var.resource_group
   dns_prefix          = "${var.resource_group}-k8s"
 
