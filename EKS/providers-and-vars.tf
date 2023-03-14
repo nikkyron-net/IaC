@@ -104,7 +104,15 @@ variable "department" {
   type = string
   default = "upmyjob"
 }
-
+# domain for external_dns
+variable "domain" {
+  type = string
+  default = "dev.nikkyron.net"
+}
+variable "zone_id" {
+  type = string
+  default = "Z09285031HMGU88OLTVVL"
+}
 # Define Local Values in Terraform
 locals {
   name = "${var.department}-${var.environment}"
