@@ -1,8 +1,0 @@
-spec:
-  destination:
-    server: https://kubernetes.default.svc
-
-externalDNS:
-  iamRole: arn:aws:iam::935045054300:role/upmyjob-dev-externaldns-iam-role
-  domain: dev.nikkyron.net
-  txtOwnerID: Z09285031HMGU88OLTVVL
