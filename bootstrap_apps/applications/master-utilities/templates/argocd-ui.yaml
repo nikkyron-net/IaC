@@ -8,9 +8,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/PacktPublishing/ArgoCD-in-Practice.git
+    repoURL: https://github.com/nikkyron-net/IaC.git
     targetRevision: HEAD
-    path: applications/argocd-ui
+    path: bootstrap_apps/applications/argocd-ui
 
   destination:
     namespace: argocd-ui

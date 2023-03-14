@@ -7,9 +7,9 @@ metadata:
 spec:
   project: team
   source:
-    repoURL: https://github.com/PacktPublishing/ArgoCD-in-Practice.git
+    repoURL: https://github.com/nikkyron-net/IaC.git
     targetRevision: HEAD
-    path: ch06/simple-blue-green/deployments/argo
+    path: simple-blue-green/deployments/argo
 
   destination:
     namespace: team-blue-green

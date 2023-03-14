@@ -18,8 +18,8 @@ spec:
   - group: ''
     kind: NetworkPolicy
   sourceRepos:
-  - https://github.com/PacktPublishing/ArgoCD-in-Practice.git
-  - https://github.com/spirosoik/argocd-rollouts-cicd.git
+  - https://github.com/nikkyron-net/IaC.git
+  - https://github.com/nikkyron-net/CI.git
   roles:
   - name: team-admin
     policies:

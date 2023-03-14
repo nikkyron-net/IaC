@@ -10,9 +10,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/PacktPublishing/ArgoCD-in-Practice.git
+    repoURL: https://github.com/nikkyron-net/IaC.git
     targetRevision: HEAD
-    path: applications/istio-control-plane
+    path: bootstrap_apps/applications/istio-control-plane
 
   destination:
     namespace: istio-system

@@ -7,13 +7,13 @@ spec:
     - matrix:
         generators:
           - git:
-              repoURL: https://github.com/PacktPublishing/ArgoCD-in-Practice.git
+              repoURL: https://github.com/nikkyron-net/IaC.git
               revision: HEAD
               directories:
-                - path: applications/*
-                - path: applications/istio-control-plane
+                - path: bootstrap_apps/applications/*
+                - path: bootstrap_apps/applications/istio-control-plane
                   exclude: true
-                - path: applications/argocd-ui
+                - path: bootstrap_apps/applications/argocd-ui
                   exclude: true
           - list:
               elements:
@@ -25,7 +25,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/PacktPublishing/ArgoCD-in-Practice.git
+        repoURL: https://github.com/nikkyron-net/IaC.git
         targetRevision: HEAD
         path: "{{path}}"
       destination:

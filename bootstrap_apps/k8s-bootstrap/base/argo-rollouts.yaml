@@ -7,9 +7,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/PacktPublishing/ArgoCD-in-Practice.git
+    repoURL: https://github.com/nikkyron-net/IaC.git
     targetRevision: HEAD
-    path: applications/argo-rollouts
+    path: bootstrap_apps/applications/argo-rollouts
 
   destination:
     namespace: argo-rollouts
